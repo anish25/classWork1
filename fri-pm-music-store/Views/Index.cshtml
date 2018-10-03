@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Albums</h2>
+
+<!--Display albums from viewbag albums object-->
+<ul>
+@foreach (var a in ViewBag.albums)
+{
+    <li>
+        @a.Title
+    </li>
+
+}
+</ul>
